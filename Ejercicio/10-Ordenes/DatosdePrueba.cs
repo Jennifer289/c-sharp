@@ -156,9 +156,14 @@ public class DatosdePrueba
             }
         }
 
-        Console.WriteLine("");
+        Console.Clear();
+        
+        Console.WriteLine("**********");
+        Console.WriteLine("SubTotal de la orden es de: " + nuevaOrden.SubTotal);
+        Console.WriteLine("Impuesto sobre venta es de: " + nuevaOrden.Impuesto);
         Console.WriteLine("Total de la orden es de: " + nuevaOrden.Total);
         Console.ReadLine();
+
     }
 
     public void ListarOrdenes()
@@ -167,7 +172,7 @@ public class DatosdePrueba
         Console.WriteLine("Lista de Ordenes");
         Console.WriteLine("================");
         Console.WriteLine("");  
-        Console.WriteLine("Codigo | Fecha | Impuesto | Subtotal | Total");
+        Console.WriteLine("Codigo | Fecha | Subtotal |Impuesto | Total");
         Console.WriteLine("Cliente | Vendedor");
         Console.WriteLine("======================");
         Console.WriteLine("");  
